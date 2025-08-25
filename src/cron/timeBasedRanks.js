@@ -170,11 +170,12 @@ async function checkTimeBasedRanks(groupId) {
 }
 
 function getRequiredRole(daysInClan) {
-	if (daysInClan >= 365) return 'colonel';
-	if (daysInClan >= 186) return 'captain';
-	if (daysInClan >= 93) return 'lieutenant';
-	if (daysInClan >= 62) return 'sergeant';
-	if (daysInClan >= 31) return 'corporal';
+	if (daysInClan >= 365) return 'serenist';
+	if (daysInClan >= 270) return 'general';
+	if (daysInClan >= 180) return 'captain';
+	if (daysInClan >= 90) return 'lieutenant';
+	if (daysInClan >= 60) return 'sergeant';
+	if (daysInClan >= 30) return 'corporal';
 	return 'recruit';
 }
 
